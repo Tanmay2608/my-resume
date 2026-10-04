@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tanmay Agrawal | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .education,
+        .experience,
+        .certifications {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #38bdf8;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .timeline-item h3 {
+            color: #1e3a8a;
+        }
+
+        .contact {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #020617;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>MyPortfolio</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Hello, I'm <span>Tanmay Agrawal</span></h1>
+
+            <p>
+                Final-Year Engineering Student | Software Developer | AI Enthusiast
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a final-year engineering student passionate about software
+                development, artificial intelligence, web development and
+                problem solving. I enjoy building practical projects that
+                solve real-world problems and continuously improving my
+                technical skills.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+            <div class="skill">C / C++</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">AI / ML</div>
+            <div class="skill">Data Structures</div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>AI Trading Platform</h3>
+
+                <p>
+                    Developed an AI-based paper trading platform that allows
+                    users to analyze market data and practice trading without
+                    using real money.
+                </p>
+
+                <p><b>Technologies:</b> Python, AI, JavaScript, React</p>
+
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+
+            <div class="card">
+                <h3>Return Management System</h3>
+
+                <p>
+                    Built an intelligent return management system using
+                    multi-agent concepts to automate product return and
+                    escalation workflows.
+                </p>
+
+                <p><b>Technologies:</b> HTML, CSS, JavaScript, AI</p>
+
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+
+            <div class="card">
+                <h3>Student Management System</h3>
+
+                <p>
+                    Created a web-based application for managing student
+                    records, academic information and administrative data.
+                </p>
+
+                <p><b>Technologies:</b> HTML, CSS, JavaScript, SQL</p>
+
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education">
+
+            <div class="timeline-item">
+                <h3>Bachelor of Engineering</h3>
+
+                <p>
+                    <b>Computer Engineering</b>
+                </p>
+
+                <p>
+                    XYZ Engineering College, Mumbai
+                </p>
+
+                <p>
+                    2022 - 2026
+                </p>
+
+                <p>
+                    CGPA: 8.5 / 10
+                </p>
+            </div>
+
+
+            <div class="timeline-item">
+                <h3>Higher Secondary Education</h3>
+
+                <p>
+                    ABC Junior College
+                </p>
+
+                <p>
+                    2020 - 2022
+                </p>
+
+                <p>
+                    Percentage: 85%
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Internships & Experience</h2>
+
+        <div class="experience">
+
+            <div class="timeline-item">
+                <h3>Software Development Intern</h3>
+
+                <p>
+                    <b>ABC Technologies</b> | May 2025 - July 2025
+                </p>
+
+                <p>
+                    Worked on web application development, REST APIs and
+                    database integration. Collaborated with developers to
+                    implement new features and fix application issues.
+                </p>
+            </div>
+
+
+            <div class="timeline-item">
+                <h3>AI/ML Intern</h3>
+
+                <p>
+                    <b>XYZ Solutions</b> | June 2024 - August 2024
+                </p>
+
+                <p>
+                    Worked on machine learning models and data preprocessing.
+                    Assisted in developing AI-based solutions for real-world
+                    business problems.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Certifications -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+
+        <div class="certifications">
+
+            <div class="timeline-item">
+                <h3>Python Programming</h3>
+                <p>Coursera | 2025</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Web Development</h3>
+                <p>Udemy | 2025</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Data Structures & Algorithms</h3>
+                <p>Online Certification | 2024</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Achievements -->
+    <section>
+        <h2>Achievements</h2>
+
+        <div class="about">
+
+            <p>🏆 Winner - College Hackathon 2025</p>
+            <p>💻 Solved 300+ coding problems</p>
+            <p>🚀 Developed multiple academic and personal projects</p>
+            <p>📜 Completed multiple technical certifications</p>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            📧 Email:
+            <a href="mailto:your.email@gmail.com">
+                your.email@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📱 Phone: +91 XXXXX XXXXX
+        </p>
+
+        <p>
+            💼 LinkedIn:
+            <a href="#" target="_blank">
+                linkedin.com/in/yourprofile
+            </a>
+        </p>
+
+        <p>
+            💻 GitHub:
+            <a href="#" target="_blank">
+                github.com/yourusername
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Tanmay Agrawal | All Rights Reserved
+        </p>
+    </footer>
+
+</body>
+</html>
